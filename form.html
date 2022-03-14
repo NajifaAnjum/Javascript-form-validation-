@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="form.css" class="">
+    <script defer src="form.js"></script>
+</head>
+<body>
+
+<form class="form" id="form" action="data_push_db.php" method="post">
+    <div class="title">Welcome</div>
+    <div class="subtitle">Let's create your account!</div>
+
+    <div class="input-control">
+      <input id="username" name="username" class="input" type="text"  placeholder="Username"/>
+      <div class="cut"></div>
+      <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+      <input id="email" name="email" class="input" type="email" placeholder="Email " />
+      <div class="cut cut-short"></div>
+      <div class="error"></div>
+    </div>
+
+      <div class="input-control">
+        <input id="password" name="password" class="input" type="password" placeholder="Password" />
+        <div class="cut"></div>
+        <div class="error"></div>
+      </div>
+
+      <div class="input-control">
+        <input id="password2" name="password2" class="input" type="password2" placeholder="Confirm Password" />
+        <div class="cut"></div>
+        <div class="error"></div>
+      </div>
+      
+    <input type="submit" onsubmit="validateInputs();" value="Submit"/>
+</form>
+ 
+</body>
